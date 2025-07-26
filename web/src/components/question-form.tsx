@@ -66,11 +66,12 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
 							placeholder="What would you like to know?"
 							type="textarea"
 							fieldClassName="min-h-[100px]"
+							disabled={isCreatingQuestion}
 						/>
 
 						<Button type="submit" disabled={isCreatingQuestion}>
 							{isCreatingQuestion ? (
-								<p className="flex items-center p-2">
+								<p className="flex items-center gap-2">
 									<Loader2 className="animate-spin" /> Submiting your question
 								</p>
 							) : (

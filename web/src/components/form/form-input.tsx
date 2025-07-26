@@ -1,3 +1,4 @@
+import type { ComponentProps } from "react";
 import type { Control, FieldPath, FieldValues } from "react-hook-form";
 import {
 	FormControl,
@@ -19,6 +20,7 @@ interface Props<
 	placeholder?: string;
 	formControl: Control<TFieldValues>;
 	fieldClassName?: string;
+	disabled?: boolean;
 }
 
 export function FormInput<
@@ -31,6 +33,7 @@ export function FormInput<
 	formControl,
 	fieldClassName,
 	type = "input",
+	disabled = false,
 }: Props<TTFieldValues, TName>) {
 	return (
 		<FormField
@@ -45,12 +48,14 @@ export function FormInput<
 								{...field}
 								placeholder={placeholder}
 								className={fieldClassName}
+								disabled={disabled}
 							/>
 						) : (
 							<Textarea
 								{...field}
 								placeholder={placeholder}
 								className={fieldClassName}
+								disabled={disabled}
 							/>
 						)}
 					</FormControl>
