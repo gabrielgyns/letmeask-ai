@@ -1,6 +1,8 @@
 # LetMeAsk AI
 
-An AI-powered Q&A platform that allows users to create rooms, record audio content, and ask questions that get answered based on the audio context using vector similarity search. (Simple app for study based)
+An AI-powered Q&A platform that allows users to create rooms, record audio content, and ask questions that get answered based on the audio context using vector similarity search. _(Simple app for study based)_
+
+_Screenshots below_ 📷
 
 ## About
 
