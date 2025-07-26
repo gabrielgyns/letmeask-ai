@@ -1,5 +1,9 @@
 # About
 
+## Projects
+- [Server - Node](https://github.com/gabrielgyns/letmeask-ai/tree/main/server)
+- [Web - React](https://github.com/gabrielgyns/letmeask-ai/tree/main/web)
+
 # Techs & Specs
 
 # Screenshots
